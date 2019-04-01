@@ -10,7 +10,10 @@ public class Cercle {
         y=yy;       
     }   
          
-    Cercle(){}
+    Cercle(){
+        x=0;
+        y=0;
+    }
     
     public Cercle(Cercle c){
         this.x = c.x;
@@ -37,8 +40,16 @@ public class Cercle {
     
     public Boolean equals(Cercle c){
         return c.getX()==x && c.getY()==y;
+    }         
+    
+    public static void main(String[] args) {             
+        Cercle c = new Cercle();
+        
+        c.setX(30);
+        c.setY(30);
+        
+        System.out.println(c.toString());
+        
     }
-         
-         
 
 }//Arnau Calleja Martin <arnau.cm123@gmail.com>
