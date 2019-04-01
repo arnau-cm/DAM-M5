@@ -11,6 +11,11 @@ public class Cercle {
     }   
          
     Cercle(){}
+    
+    public Cercle(Cercle c){
+        this.x = c.x;
+        this.y = c.y;
+    }
  
     public float getX() {
         return x;
